@@ -18,6 +18,8 @@ Pada kesempatan kali ini, saya memilih problem "Isogram" untuk saya bahas dikare
 
 Berikut adalah deskripsi dari permasalahan "Isogram" dalam situs <https://exercism.io> :
 
+---
+
 # Isogram
 Determine if a word or phrase is an isogram.
 
@@ -32,6 +34,8 @@ Examples of isograms:
 
 The word isograms, however, is not an isogram, because the s repeats.
 
+---
+
 ### Cara Saya Menyelesaikan Masalah Tersebut
 Pertama, cara saya menyelesaikan masalah tersebut adalah memahami betul-betul masalah yang akan saya selesaikan. Saya membaca berulang-ulang deskripsi dari permasalahan tersebut sampai saya mengerti apa yang diinginkan oleh permasalahan tersebut.
 
@@ -40,6 +44,15 @@ Kedua, saya menganalisis masalah tersebut dengan cara saya berasumsi serta memik
 Ketiga, setelah saya menemukan kemungkinan-kemungkinan tersebut, lalu saya memilih satu kemungkinan yang menurut saya paling mudah bagi saya untuk mengimplementasikannya pada permasalahan tersebut.
 
 Keempat, Happy Coding.
+
+### Pengalaman yang Saya dapatkan Selama Mengerjakan Permasalahan Ini
+Banyak pengalaman yang saya dapatkan selama saya mengerjakan permasalahan ini, terutama dalam membaca pesan error yang disebabkan oleh kesalahan syntax maupun kesalahan logika.
+
+Lalu, metode atau cara saya dalam menyelesaikan permasalahan ini yang menurut saya solusi saya cukup mudah untuk dimengerti. Inti dari permasalahan ini adalah kita harus bisa menentukan apakah sebuah kata atau kalimat yang di input termasuk _Isogram_ atau bukan.
+
+Awalnya saya berpikir untuk menggunakan cara iterasi dalam menyelesaikan masalah ini. Yaitu dengan melakukan iterasi huruf pada kata yang di input. Namun cara ini menurut saya akan merepotkan. Lalu saya mendapatkan ide lain untuk menyelesaikan permasalahan ini. Yaitu dengan cara membuat duplikat dari input yang berupa _&str_ menjadi dua variabel baru yang serupa, lalu mengubah kedua duplikat tersebut menjadi huruf kecil semua. Selanjutnya saya menghilangkan karakter spasi dan strip dari kedua duplikat tersebut. Kemudian satu duplikat saya iterasi lalu saya masukkan ke dalam HashSet. Alasan kenapa saya menggunakan HashSet ialah karena dengan menggunakan HashSet, maka input yang saya iterasi tersebut akan menghilangkan duplikat huruf yang dimilikinya. Kemudian di langkah yang terakhir, saya membandingkan panjang variabel duplikat yang satunya dengan panjang HashSet tersebut. Jika panjangnya sama, maka input tersebut merupakan isogram.
+
+Tentu cara atau metode tersebut merupakan pengalaman berharga yang tidak terpikirkan sebelumnya. Dan cara ini juga mudah dimengerti oleh orang yang baru membaca hasil kode saya dengan sedikit penjelasan.
 
 ### Source Code
 
